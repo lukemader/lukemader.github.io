@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="loadMarkdownContent.js"></script>
     <div class = "navbar-container">
         <div class="side-bar">
             <!-- Left Panel -->
@@ -48,111 +49,20 @@
             </div>
             <div class="section">
                 <h2>Teaching</h2>
-                    <div id = "teaching-markdown-content" class="markdown-content">
-                        <!-- <script>
-                            const TEACHconverter = new showdown.Converter();
-                            const TEACHmarkdownContent = `# 2024-2025
-**MATH210 - Real Analysis** - 2 fortnightly workshop groups 
-
-**MATH245 - Computational Mathematics** - 2 weekly Python and R programming labs
-
-# 2023-2024
-**MATH111 - Numbers and Relations** - 2 weekly workshop groups 
-
-**MATH112 - Discrete Mathematics** - 2 weekly workshop groups 
-
-**MATH113 - Convergence and Continuity** - 1 weekly workshop group
-
-**MATH114 - Series, Integration, and Differentiation** - 1 weekly workshop group
-
-**MATH210 - Real Analysis** - 2 fortnightly workshop groups
-
-**MATH319 - Geometry of Curves and Surfaces** - 2 weekly workshop groups`
-                            const TEACHhtmlContent = TEACHconverter.makeHtml(TEACHmarkdownContent);
-                            const TEACHcontentElement = document.getElementById('TEACHmarkdown-content');
-                            TEACHcontentElement.innerHTML = TEACHhtmlContent;
-                        </script> -->
-                    </div>
+                <div id="teaching-markdown-content" class="markdown-content"></div>
             </div>
 
             <div class="Education">
                 <h2>Education</h2>
-                <div id = "education-markdown-content" class = "markdown-content">
-                    <!-- <script>
-                        const EDconverter = new showdown.Converter();
-                        const EDmarkdownContent = `# PhD Mathematics -- Lancaster University
-September 2023 -- Present
-
-# MSci Mathematics -- Lancaster University 
-September 2018 -- 2022 
-
-**Grade:** 1st
-
-**Dissertation:** "Unbounded operators in Hilbert spaces and their role in quantum mechanics"
-
-**Summer Research Project:** "Square roots of completely positive maps"`
-                        const EDhtmlContent = TEACHconverter.makeHtml(EDmarkdownContent);
-                        const EDcontentElement = document.getElementById('EDmarkdown-content');
-                        EDcontentElement.innerHTML = EDhtmlContent;
-                    </script> -->
-                </div>
-                
+                <div id="education-markdown-content" class="markdown-content"></div>
             </div>
 
-            <!-- Talks & Seminars Section -->
             <div class="section">
                 <h2>Talks & Seminars</h2>
-                <div id="talks-markdown-content" class="markdown-content">
-                    <!-- <script>
-                        const converter = new showdown.Converter();
-
-                        const markdownContent = `# Upcoming - Atoms, lasers, and making sense of the rotating wave approximation
-
-**Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
-
-**Location:** Lancaster University, United Kingdom
-
-**Dates:** 25/03/2025
-
-**Abstract:** TBC
-
-**Slides:** TBC
-
-# An Introduction to Quantum Computers and Hidden Subgroup Problems
-
-**Reading Group:** [Post-Quantum Cryptography Reading Group](https://www.lancaster.ac.uk/maths/)
-
-**Location:** Lancaster University, United Kingdom
-
-**Dates:** 18/09/2024, 23/09/2024
-
-**Slides:** [Download](assets/slides/intro_to_quantum_algorithms_both_talks.pdf)
-
-# An Invitation to Mathematical Quantum Physics
-
-**Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
-
-**Location:** Lancaster University, United Kingdom
-
-**Date:** 27/11/2023
-
-**Abstract:** In the early 20th century, experiments showed that quantum particles behave very differently compared to the non-quantum world that we are used to. Not only do quantum particles exhibit both wave-like and particle-like behaviour, but they also have a probabilistic nature to them. The demand on mathematicians was that we needed new theory suitable to tackle these phenomena.
-
- 
-
-In this talk, we place ourselves in the shoes of a mathematician at the time who wishes to rigorously develop this theory. We look at how quantum physics has a natural framework through unbounded operators on Hilbert spaces, and some key differences between unbounded operators and bounded operators. We then turn to applying this theory in a quantum physics context.
-
-**Slides:** [Download](assets/slides/invitation_to_mathematical_quantum_physics.pdf)
-`;
-                        const htmlContent = converter.makeHtml(markdownContent);
-
-                        const contentElement = document.getElementById('markdown-content');
-                        contentElement.innerHTML = htmlContent; -->
-                        </script>
-                </div>
+                <div id="talks-markdown-content" class="markdown-content"></div>
+            </div>
             </div>
         </div>
     </div> 
-    <script src="loadMarkdownContent.js"></script>
 </body>
 </html>
