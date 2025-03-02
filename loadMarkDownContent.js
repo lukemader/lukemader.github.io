@@ -22,7 +22,7 @@ async function loadMarkdownContent(markdownFile, elementId) {
         const htmlContent = converter.makeHtml(markdown);
         document.getElementById(elementId).innerHTML = htmlContent;
     } catch (error) {
-        cdocument.getElementById(elementId).innerHTML = error;
+        document.getElementById(elementId).innerHTML = error;
     }
 }
 
