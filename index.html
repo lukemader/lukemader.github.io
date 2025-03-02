@@ -1,1 +1,158 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luke Mader">
+    <title>Luke Mader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "navbar-container">
+        <div class="side-bar">
+            <!-- Left Panel -->
+            <div class="profile-pic-wrapper">
+                <img src="assets/images/profile.png" class="profile-pic">
+            </div>
+            <header>
+                <h1>Luke Mader</h1>
+                <p>Mathematical Physics PhD Student</p>
+            </header>
+            <div class="section about">
+                <h2>About Me</h2>
+                <p>I am a passionate researcher working in mathematical physics, operator theory, and homogenization theory. My work focuses on rigorously proving approximations used in quantum theory.</p>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/lukemader" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/luke-mader/" target="_blank">LinkedIn</a> |
+                <a href="https://orcid.org/0009-0001-6251-6235" target="_blank">ORCID</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <!-- Central Content -->
+        <div class="content-panel">
+            <div class="section">
+                <h2>Research</h2>
+                <p>
+                    I am a <mark>mathematical physics PhD student</mark> in the Mathematical Sciences department at <mark>Lancaster University</mark> working in the intersection of <mark>operator theory</mark> and the <mark>homogenization theory of PDEs</mark>. I am currently working on a <mark>mathematical justification to rotating wave approximations</mark>, an important method in quantum optics, quantum computing, and atomic physics.
+                    <br>
+                    <br>
+                    The idea of the rotating wave approximation is to take a <mark>Hamiltonian</mark> of a quantum system and <mark>rotate it</mark> into a rotating frame. We can then approximate the Hamiltonian with a simpler one by <mark>disregarding highly oscillatory counter-rotating terms</mark>. A classic example is the <mark>Quantum Rabi model</mark>, where we have a time-independent Hamiltonian describing the interaction between a laser and a two-level atom. We can rotate the Quantum Rabi Hamiltonian with respect to the laser, which gives us a time-dependent Hamiltonian, before discarding any highly oscillating counter-rotating terms. Rotating back into our original frame gives us a rotating wave approximation known as the <mark>Jaynes-Cummings model</mark>. I am interested in the <mark>validity of the rotating wave approximation on more general quantum systems</mark> than the Quantum Rabi model.
+                    <br>
+                    <br>
+                    Outside of my PhD, I have interests in <mark>quantum information theory</mark>, <mark>operator algebras</mark>, and <mark>spectral theory</mark>.
+                </p>
+            </div>
+            <div class="section">
+                <h2>Teaching</h2>
+                    <div id = "teaching-markdown-content" class="markdown-content">
+                        <!-- <script>
+                            const TEACHconverter = new showdown.Converter();
+                            const TEACHmarkdownContent = `# 2024-2025
+**MATH210 - Real Analysis** - 2 fortnightly workshop groups 
+
+**MATH245 - Computational Mathematics** - 2 weekly Python and R programming labs
+
+# 2023-2024
+**MATH111 - Numbers and Relations** - 2 weekly workshop groups 
+
+**MATH112 - Discrete Mathematics** - 2 weekly workshop groups 
+
+**MATH113 - Convergence and Continuity** - 1 weekly workshop group
+
+**MATH114 - Series, Integration, and Differentiation** - 1 weekly workshop group
+
+**MATH210 - Real Analysis** - 2 fortnightly workshop groups
+
+**MATH319 - Geometry of Curves and Surfaces** - 2 weekly workshop groups`
+                            const TEACHhtmlContent = TEACHconverter.makeHtml(TEACHmarkdownContent);
+                            const TEACHcontentElement = document.getElementById('TEACHmarkdown-content');
+                            TEACHcontentElement.innerHTML = TEACHhtmlContent;
+                        </script> -->
+                    </div>
+            </div>
+
+            <div class="Education">
+                <h2>Education</h2>
+                <div id = "education-markdown-content" class = "markdown-content">
+                    <!-- <script>
+                        const EDconverter = new showdown.Converter();
+                        const EDmarkdownContent = `# PhD Mathematics -- Lancaster University
+September 2023 -- Present
+
+# MSci Mathematics -- Lancaster University 
+September 2018 -- 2022 
+
+**Grade:** 1st
+
+**Dissertation:** "Unbounded operators in Hilbert spaces and their role in quantum mechanics"
+
+**Summer Research Project:** "Square roots of completely positive maps"`
+                        const EDhtmlContent = TEACHconverter.makeHtml(EDmarkdownContent);
+                        const EDcontentElement = document.getElementById('EDmarkdown-content');
+                        EDcontentElement.innerHTML = EDhtmlContent;
+                    </script> -->
+                </div>
+                
+            </div>
+
+            <!-- Talks & Seminars Section -->
+            <div class="section">
+                <h2>Talks & Seminars</h2>
+                <div id="talks-markdown-content" class="markdown-content">
+                    <!-- <script>
+                        const converter = new showdown.Converter();
+
+                        const markdownContent = `# Upcoming - Atoms, lasers, and making sense of the rotating wave approximation
+
+**Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
+
+**Location:** Lancaster University, United Kingdom
+
+**Dates:** 25/03/2025
+
+**Abstract:** TBC
+
+**Slides:** TBC
+
+# An Introduction to Quantum Computers and Hidden Subgroup Problems
+
+**Reading Group:** [Post-Quantum Cryptography Reading Group](https://www.lancaster.ac.uk/maths/)
+
+**Location:** Lancaster University, United Kingdom
+
+**Dates:** 18/09/2024, 23/09/2024
+
+**Slides:** [Download](assets/slides/intro_to_quantum_algorithms_both_talks.pdf)
+
+# An Invitation to Mathematical Quantum Physics
+
+**Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
+
+**Location:** Lancaster University, United Kingdom
+
+**Date:** 27/11/2023
+
+**Abstract:** In the early 20th century, experiments showed that quantum particles behave very differently compared to the non-quantum world that we are used to. Not only do quantum particles exhibit both wave-like and particle-like behaviour, but they also have a probabilistic nature to them. The demand on mathematicians was that we needed new theory suitable to tackle these phenomena.
+
+ 
+
+In this talk, we place ourselves in the shoes of a mathematician at the time who wishes to rigorously develop this theory. We look at how quantum physics has a natural framework through unbounded operators on Hilbert spaces, and some key differences between unbounded operators and bounded operators. We then turn to applying this theory in a quantum physics context.
+
+**Slides:** [Download](assets/slides/invitation_to_mathematical_quantum_physics.pdf)
+`;
+                        const htmlContent = converter.makeHtml(markdownContent);
+
+                        const contentElement = document.getElementById('markdown-content');
+                        contentElement.innerHTML = htmlContent; -->
+                        </script>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <script src="loadMarkdownContent.js"></script>
+</body>
+</html>
