@@ -1,23 +1,48 @@
 // Async function to load and display markdown content
-async function loadMarkdownContent(markdownFile, elementId) {
+// async function loadMarkdownContent(markdownFile, elementId) {
+//     try {
+//         const repo = "https://raw.githubusercontent.com/lukemader/lukemader.github.io/master/";
+//         const file = repo + markdownFile; 
+//         const response = await fetch(file);
+
+//         if (!response.ok) {
+//             throw new Error(`Failed to load ${file}. Status: ${response.status}`);
+//         }
+
+//         const markdown = await response.text();
+//         const converter = new showdown.Converter();
+//         const htmlContent = converter.makeHtml(markdown);
+//         document.getElementById(elementId).innerHTML = htmlContent;
+//     } catch (error) {
+//         console.error('Error loading markdown file:', error);
+//         document.getElementById(elementId).innerHTML = `Error: ${error.message}`; 
+//     }
+// }
+
+// function loadMarkdownContent(markdownFile, elementID){
+//     reader = new FileReader();
+//     reader.readAsText(markdownFile);
+//     const markdown = reader.
+// }
+
+function loadMarkdownContent(markdownFile, elementId) {
     try {
-        const repo = "https://raw.githubusercontent.com/lukemader/lukemader.github.io/master/";
-        const file = repo + markdownFile; 
-        const response = await fetch(file);
+        const reader = new FileReader();
 
-        if (!response.ok) {
-            throw new Error(`Failed to load ${file}. Status: ${response.status}`);
-        }
+        reader.onload = function(event) {
+            const markdown = event.target.result;
+            const converter = new showdown.Converter();
+            const htmlContent = converter.makeHtml(markdown);
+            document.getElementById(elementId).innerHTML = htmlContent;
+        };
 
-        const markdown = await response.text();
-        const converter = new showdown.Converter();
-        const htmlContent = converter.makeHtml(markdown);
-        document.getElementById(elementId).innerHTML = htmlContent;
+        reader.readAsText(markdownFile);
     } catch (error) {
         console.error('Error loading markdown file:', error);
-        document.getElementById(elementId).innerHTML = `Error: ${error.message}`; 
+        document.getElementById(elementId).innerHTML = `Error: ${error.message}`;
     }
 }
+
 
 // Load content for the Teaching section
 loadMarkdownContent('assets/markdown/teaching.md', 'teaching-markdown-content');
