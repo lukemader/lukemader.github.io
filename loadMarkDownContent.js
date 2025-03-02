@@ -1,6 +1,8 @@
 // Function to load and display markdown content
 function loadMarkdownContent(markdownFile, elementId) {
-    fetch(markdownFile)
+    github_repo = "https://raw.githubusercontent.com/lukemader/lukemader.github.io/master/"
+    file = github.concat(markdownFile)
+    fetch(file)
         .then(response => response.text())
         .then(markdown => {
             const converter = new showdown.Converter();
