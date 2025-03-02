@@ -19,7 +19,7 @@ async function loadMarkdownContent(markdownFile, elementId) {
 }
 
 window.onload = function() {
-    loadMarkdownContent("talks.md", "talks-markdown-content");
-    loadMarkdownContent("education.md", "education-markdown-content");
-    loadMarkdownContent("teaching.md", "teaching-markdown-content");
+    loadMarkdownContent("assets/markdown/talks.md", "talks-markdown-content");
+    loadMarkdownContent("assets/markdown/education.md", "education-markdown-content");
+    loadMarkdownContent("assets/markdown/teaching.md", "teaching-markdown-content");
 };
