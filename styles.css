@@ -1,7 +1,7 @@
-/* styles.css */
 :root {
     --highlight: #FF9D23;
-    --sidebar-width: 20%;
+    --sidebar-width: 30%;
+    --medium-sidebar-width: 30%; /* Increased for medium screens */
 }
 
 * {
@@ -28,8 +28,8 @@ body {
     background-color: #161b22;
     border-radius: 10px;
     gap: 3rem;
-    height: 100vh; 
-    overflow-y: auto; 
+    height: 100vh;
+    overflow-y: auto;
     flex-direction: row;
 }
 
@@ -37,34 +37,41 @@ body {
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
     width: var(--sidebar-width);
-    height: 100vh; 
+    height: 100vh;
     padding: 2rem 1rem;
-    background-color: #0d1117; 
-    border-right: 1px solid #30363d; 
+    background-color: #0d1117;
+    border-right: 1px solid #30363d;
+    text-align: center; /* Center text */
+    overflow-y: auto; /* Enable vertical scrolling */
+    white-space: normal; /* Allow text to wrap */
+}
+
+.profile-pic-wrapper {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto; /* Center horizontally and add bottom margin */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .content-panel {
     flex-grow: 1;
-    padding-left: calc(var(--sidebar-width) + 2rem); 
-    overflow-y: auto; 
-}
-
-.profile-pic-wrapper { 
-    width: 250px;
-    height: 250px;
-    border-radius: 100%; 
-    overflow: hidden; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-} 
-
-.profile-pic { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+    padding-left: calc(var(--sidebar-width) + 2rem);
+    overflow-y: auto;
 }
 
 h1, h2, h3 {
@@ -103,6 +110,8 @@ a:hover {
 .social-links {
     margin-top: 2rem;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .social-links a {
@@ -133,6 +142,10 @@ mark {
     border-radius: 10px;
 }
 
+.section {
+    padding-bottom: 2rem; /* Add space below content within each section */
+}
+
 /* Media Queries for Responsive Design */
 
 /* Phones (portrait) and small screens */
@@ -149,15 +162,18 @@ mark {
         padding: 1rem;
         border-right: none;
         border-bottom: 1px solid #30363d;
-    }
-
-    .content-panel {
-        padding-left: 0;
+        align-items: center; /* Ensure centering */
+        justify-content: center;
+        white-space: normal; /* Allow wrapping */
     }
 
     .profile-pic-wrapper {
         width: 200px;
         height: 200px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h1 {
@@ -188,18 +204,64 @@ mark {
     }
 }
 
-/* Tablets and larger phones (portrait/landscape) */
-@media screen and (max-width: 1024px) {
+/* Tablets in portrait mode */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
     .main-container {
+        flex-direction: column;
         padding: 1.5rem;
+        gap: 2rem;
     }
 
     .navbar-container {
-        width: 100%; /* Take full width on tablets and small screens */
+        width: 100%;
+        height: auto;
+        align-items: center;
+        border-right: none;
+        padding-bottom: 1rem;
     }
 
     .content-panel {
         padding-left: 0;
+        width: 100%;
+        padding-top: 2rem;
+    }
+
+    .profile-pic-wrapper {
+        width: 225px;
+        height: 225px;
+        margin: 0 auto; /* Center profile pic */
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Tablets in landscape mode and larger phones */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .main-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .navbar-container {
+        width: var(--medium-sidebar-width); /* Increase the width on medium screens */
+        align-items: center; /* Center navbar content */
+        height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .content-panel {
+        padding-left: calc(var(--medium-sidebar-width) + 2rem); /* Adjust the content-panel padding */
+        width: 100%;
     }
 
     .profile-pic-wrapper {
@@ -228,6 +290,7 @@ mark {
 
     .navbar-container {
         width: var(--sidebar-width);
+        align-items: center; /* Center navbar content */
     }
 
     .content-panel {
