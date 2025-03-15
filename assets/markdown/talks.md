@@ -1,4 +1,17 @@
-# Upcoming - Atoms, lasers, and making sense of the rotating wave approximation
+# Upcoming - The beauty of approximations through the Quantum Rabi Model
+
+**Conference:** [Young Functional Analysts Workshop 2025](https://sites.google.com/view/yfaw2025/home)
+
+**Location:** Glasgow University, United Kingdom
+
+**Date:** TBC
+
+**Abstract:** TBC
+
+**Slides:** TBC
+
+
+# Upcoming - From Particles to Abstract Proof: Pure Math's Role in the Quantum Rabi Model
 
 **Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
 
