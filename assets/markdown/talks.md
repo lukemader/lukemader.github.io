@@ -11,7 +11,7 @@
 **Slides:** TBC
 
 
-# Upcoming - From Particles to Abstract Proof: Pure Math's Role in the Quantum Rabi Model
+# Upcoming - From Particles to Abstract Proof: Pure Maths' Role in the Quantum Rabi Model
 
 **Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
 
