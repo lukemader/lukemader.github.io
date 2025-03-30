@@ -1,17 +1,21 @@
-# Upcoming - The beauty of approximations through the Quantum Rabi Model
+# Upcoming - The Rotating Frame Approximation Through Time Homogenization Of The Schrödinger Equation
 
 **Conference:** [Young Functional Analysts Workshop 2025](https://sites.google.com/view/yfaw2025/home)
 
 **Location:** Glasgow University, United Kingdom
 
-**Date:** TBC
+**Date:** 03/04/2025
 
-**Abstract:** TBC
+**Abstract:** In quantum mechanics, physical models are often described by self-adjoint operators satisfying the Schrödinger equation, known as Hamiltonians. Quite often, these Hamiltonians can be difficult to handle. A fundamental example is the quantum Rabi model, which was developed by Jaynes and Cummings in their 1963 paper. Explicitly calculating its spectrum can be difficult, with analytical solutions being recently given by Braak in 2011.
+
+The rotating wave approximation is often used to replace the quantum Rabi model with the Jaynes-Cumming model, which can be easier to use. Where physically motivated and experimentally justified, a rigorous justification for this was recently published in 2024 by Burgarth, Facchi, Hillier, and Ligabò by showing state-dependent convergence of the respective time evolutions.
+
+In this talk, we provide an overview on a mathematical justification for the rotating wave approximation of the classical Rabi model and quantum Rabi model. We discuss two recent methods in the literature to justify the rotating wave approximation on these models, before introducing methods being developed by Elton, Hillier, and myself which frame this approximation as a homogenization problem.
 
 **Slides:** TBC
 
 
-# Upcoming - From Particles to Abstract Proof: Pure Maths' Role in the Quantum Rabi Model
+# From Particles to Abstract Proof: Pure Maths' Role in the Quantum Rabi Model
 
 **Seminar:** [Lancaster University Postgraduate Forum](https://www.lancaster.ac.uk/maths/)
 
