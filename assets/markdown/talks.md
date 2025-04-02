@@ -10,7 +10,7 @@
 
 The rotating wave approximation is often used to replace the quantum Rabi model with the Jaynes-Cumming model, which can be easier to use. Where physically motivated and experimentally justified, a rigorous justification for this was recently published in 2024 by Burgarth, Facchi, Hillier, and Ligabò by showing state-dependent convergence of the respective time evolutions.
 
-In this talk, we provide an overview on a mathematical justification for the rotating wave approximation of the classical Rabi model and quantum Rabi model. We discuss two recent methods in the literature to justify the rotating wave approximation on these models, before introducing methods being developed by Elton, Hillier, and myself which frame this approximation as a homogenization problem.
+In this talk, we provide an overview on a mathematical justification for the rotating wave approximation of the semi-classical Rabi model and quantum Rabi model. We discuss two recent methods in the literature to justify the rotating wave approximation on these models, before introducing methods being developed by Elton, Hillier, and myself which frame this approximation as a homogenization problem.
 
 **Slides:** TBC
 
