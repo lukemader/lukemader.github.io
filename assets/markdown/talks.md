@@ -1,4 +1,4 @@
-# Upcoming - The Rotating Frame Approximation Through Time Homogenization Of The Schrödinger Equation
+# The Rotating Frame Approximation Through Time Homogenization Of The Schrödinger Equation
 
 **Conference:** [Young Functional Analysts Workshop 2025](https://sites.google.com/view/yfaw2025/home)
 
@@ -11,8 +11,6 @@
 The rotating wave approximation is often used to replace the quantum Rabi model with the Jaynes-Cumming model, which can be easier to use. Where physically motivated and experimentally justified, a rigorous justification for this was recently published in 2024 by Burgarth, Facchi, Hillier, and Ligabò by showing state-dependent convergence of the respective time evolutions.
 
 In this talk, we provide an overview on a mathematical justification for the rotating wave approximation of the semi-classical Rabi model and quantum Rabi model. We discuss two recent methods in the literature to justify the rotating wave approximation on these models, before introducing methods being developed by Elton, Hillier, and myself which frame this approximation as a homogenization problem.
-
-**Slides:** TBC
 
 
 # From Particles to Abstract Proof: Pure Maths' Role in the Quantum Rabi Model
@@ -32,8 +30,6 @@ Under certain conditions, in their 1963 paper Jaynes and Cummings argued that we
 In this talk, we explore the mathematical interest in the Quantum Rabi model. We start with a brief overview on the Hilbert space formulation of quantum mechanics. We explain what it means to rigorously approximate the Quantum Rabi model by the Jaynes-Cummings model from a mathematical perspective, providing an overview on the approach by Burgarth, Facchi, Hillier, and Ligabò. Finally, we introduce an approach currently being developed by myself, Daniel Elton, and Robin Hillier to justify this approximation through the homogenization theory of differential equations.
 
 No previous knowledge of operator theory, quantum mechanics, or homogenization theory will be assumed.
-
-**Slides:** TBC
 
 # An Introduction to Quantum Computers and Hidden Subgroup Problems
 
